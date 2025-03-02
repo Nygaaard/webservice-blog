@@ -24,8 +24,6 @@ db.serialize(() => {
             FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE
         )
         `);
-    
-    console.log("Tabeller skapade...");
 })
 
 module.exports = db;
